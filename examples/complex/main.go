@@ -12,8 +12,8 @@ import (
 // however you deem best.
 
 // You can define your handlers in the same file...
-var pingHandler = hal.Hear(`syn`, func(res *hal.Response) error {
-	return res.Send("ack")
+var pingHandler = hal.Hear(`ping`, func(res *hal.Response) error {
+	return res.Send("PONG")
 })
 
 func run() int {
