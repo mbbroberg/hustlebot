@@ -1,4 +1,4 @@
-package hal
+package hustlebot
 
 // Handler constants
 const (

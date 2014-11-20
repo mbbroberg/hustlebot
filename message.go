@@ -1,4 +1,4 @@
-package hal
+package hustlebot
 
 // Message represents an incoming chat message.
 type Message struct {

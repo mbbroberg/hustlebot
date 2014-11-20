@@ -1,4 +1,4 @@
-package hal
+package hustlebot
 
 import (
 	"encoding/json"

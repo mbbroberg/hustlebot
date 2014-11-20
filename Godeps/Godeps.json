@@ -1,8 +1,0 @@
-{
-	"ImportPath": "_/Users/dave/reps/hustlebot",
-	"GoVersion": "go1.3.3",
-	"Packages": [
-		"hustlebot"
-	],
-	"Deps": []
-}

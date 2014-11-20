@@ -1,4 +1,4 @@
-package hal_test
+package hustlebot_test
 
 import (
 	"github.com/danryan/hal"

@@ -1,4 +1,4 @@
-package hal
+package hustlebot
 
 // Response struct
 type Response struct {
