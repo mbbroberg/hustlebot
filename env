@@ -1,0 +1,16 @@
+#!/bin/sh
+export HAL_ADAPTER='slack'
+export HAL_NAME='hustlebot'
+export HAL_SLACK_BOTNAME='hustlebot'
+export HAL_SLACK_IRC_ENABLED='1'
+export HAL_SLACK_IRC_PASSWORD='hustlebotdev.cYTnmKIFuP7g0UFpRO11'
+export HAL_SLACK_TEAM='hustlebotdev'
+export HAL_SLACK_TOKEN='9jOgCAhUZ6nvyRRxYtnrfhIF'
+
+h config:set HAL_ADAPTER='slack'
+h config:set HAL_NAME='hustlebot'
+h config:set HAL_SLACK_BOTNAME='hustlebot'
+h config:set HAL_SLACK_IRC_ENABLED='1'
+h config:set HAL_SLACK_IRC_PASSWORD='hustlebotdev.cYTnmKIFuP7g0UFpRO11'
+h config:set HAL_SLACK_TEAM='hustlebotdev'
+h config:set HAL_SLACK_TOKEN='9jOgCAhUZ6nvyRRxYtnrfhIF'
