@@ -1,0 +1,32 @@
+{
+	"ImportPath": "github.com/djosephsen/hustlebot",
+	"GoVersion": "go1.3.3",
+	"Deps": [
+		{
+			"ImportPath": "bitbucket.org/kardianos/osext",
+			"Comment": "null-15",
+			"Rev": "44140c5fc69ecf1102c5ef451d73cd98ef59b178"
+		},
+		{
+			"ImportPath": "github.com/ccding/go-config-reader/config",
+			"Rev": "8b6c2b50197f20da3b1c5944c274c173634dc056"
+		},
+		{
+			"ImportPath": "github.com/ccding/go-logging/logging",
+			"Comment": "v0.1-15-gc0585d1",
+			"Rev": "c0585d19814ac8e8a37b9253bf25cc6152ba7a6b"
+		},
+		{
+			"ImportPath": "github.com/danryan/env",
+			"Rev": "bc567f4d372a17eb756004cdbfd8458ecc04b07e"
+		},
+		{
+			"ImportPath": "github.com/danryan/hal",
+			"Rev": "8d1621a9815d4f4ba6ceec81e43f146e88c58d6e"
+		},
+		{
+			"ImportPath": "github.com/djosephsen/bothandlers",
+			"Rev": "6baec60f283d7393e73eecf04f35234a2cb5cbd8"
+		}
+	]
+}
