@@ -10,14 +10,17 @@ type ikr struct{
 }
 
 func (h *ikr) Method() string {
-	return hal.RESPOND
+	hal.Logger.Debug("ikr: called Method()")
+	return hal.HEAR
 }
 
 func (h *ikr) Usage() string {
-	return `ping - responds with "PONG"`
+	hal.Logger.Debug("ikr: called Usage()")
+	return `ikr - listens for enthusiasm; responds with validation`
 }
 
 func (h *ikr) Pattern() string {
+	hal.Logger.Debug("ikr: called Usage()")
 	triggers:=[]string{
 		"best.*ev(er|ar)",
 		"so good",
@@ -33,6 +36,7 @@ func (h *ikr) Pattern() string {
 }
 
 func (h *ikr) Run(res *hal.Response) error {
+	hal.Logger.Debug("ikr: called Usage()")
 	replies := []string{
 		"*I know right?!*",
 		"*OMG* couldn't agree more",
@@ -55,7 +59,7 @@ func (h *ikr) Run(res *hal.Response) error {
 		"it's like you *literally* just read my mind right now",
 	}
 
-	return res.Send(replies[rand.Intn(len(replies))])
+	return res.Send(replies[rand.Intn(len(replies)-1)])
 }
 
 // Ping exports
