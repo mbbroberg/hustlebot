@@ -1,1 +1,1 @@
-web: hustlebot
+web: bin/hustlebot
