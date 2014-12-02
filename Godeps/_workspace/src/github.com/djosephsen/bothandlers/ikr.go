@@ -3,7 +3,7 @@ package bothandlers
 import (
 	"math/rand"
 	"strings"
-	"github.com/danryan/hal"
+	"github.com/djosephsen/hal"
 )
 
 type ikr struct{

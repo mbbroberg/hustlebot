@@ -1,6 +1,6 @@
 package bothandlers
 
-import "github.com/danryan/hal"
+import "github.com/djosephsen/hal"
 
 var Tableflip = &hal.Handler{
 	Method:  hal.HEAR,

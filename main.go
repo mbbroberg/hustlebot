@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/djosephsen/hal"
-	_ "github.com/djosephsen/hal/adapter/slack"
+	_ "github.com/djosephsen/hal/adapter/shell"
 	"github.com/djosephsen/bothandlers"
 	_ "github.com/djosephsen/hal/store/memory"
 	"os"
