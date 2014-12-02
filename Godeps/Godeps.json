@@ -30,7 +30,7 @@
 		},
 		{
 			"ImportPath": "github.com/djosephsen/bothandlers",
-			"Rev": "d6206d4e3a6340c21d46e620c4feb431e3824a94"
+			"Rev": "52c94f20df1b63619e3c6659d8f3019121fef143"
 		},
 		{
 			"ImportPath": "github.com/thoj/go-ircevent",

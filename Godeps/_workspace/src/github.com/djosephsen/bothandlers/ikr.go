@@ -20,7 +20,7 @@ func (h *ikr) Usage() string {
 }
 
 func (h *ikr) Pattern() string {
-	hal.Logger.Debug("ikr: called Usage()")
+	hal.Logger.Debug("ikr: called Pattern()")
 	triggers:=[]string{
 		"best.*ev(er|ar)",
 		"so good",
@@ -32,11 +32,13 @@ func (h *ikr) Pattern() string {
 		"(so|pretty) great",
 		"off the hook",
 	}
-	return "(?i)"+strings.Join(triggers,"|")
+	pat := "(?i)"+strings.Join(triggers,"|")
+	hal.Logger.Debug("ikr: pattern: %s", pat)
+	return pat
 }
 
 func (h *ikr) Run(res *hal.Response) error {
-	hal.Logger.Debug("ikr: called Usage()")
+	hal.Logger.Debug("ikr: called Run()")
 	replies := []string{
 		"*I know right?!*",
 		"*OMG* couldn't agree more",
@@ -58,8 +60,9 @@ func (h *ikr) Run(res *hal.Response) error {
 		"FOR REALSIES",
 		"it's like you *literally* just read my mind right now",
 	}
-
-	return res.Send(replies[rand.Intn(len(replies)-1)])
+	reply := replies[rand.Intn(len(replies)-1)]
+	hal.Logger.Debug("ikr: my reply is: %s", reply)
+	return res.Send(reply)
 }
 
 // Ping exports
