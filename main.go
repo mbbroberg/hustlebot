@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/danryan/hal"
-	_ "github.com/danryan/hal/adapter/slack"
+	"github.com/djosephsen/hal"
+	_ "github.com/djosephsen/hal/adapter/slack"
 	"github.com/djosephsen/bothandlers"
-	_ "github.com/danryan/hal/store/memory"
+	_ "github.com/djosephsen/hal/store/memory"
 	"os"
 )
 
