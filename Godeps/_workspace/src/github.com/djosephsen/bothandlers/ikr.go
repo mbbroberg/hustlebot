@@ -62,7 +62,8 @@ func (h *ikr) Run(res *hal.Response) error {
 	}
 	reply := replies[rand.Intn(len(replies)-1)]
 	hal.Logger.Debug("ikr: my reply is: %s", reply)
-	return res.Send(reply)
+	res.Send(reply)
+	return nil
 }
 
 // Ping exports
