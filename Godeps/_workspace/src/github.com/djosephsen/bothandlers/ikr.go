@@ -10,17 +10,14 @@ type ikr struct{
 }
 
 func (h *ikr) Method() string {
-	hal.Logger.Debug("ikr: called Method()")
 	return hal.HEAR
 }
 
 func (h *ikr) Usage() string {
-	hal.Logger.Debug("ikr: called Usage()")
 	return `ikr - listens for enthusiasm; responds with validation`
 }
 
 func (h *ikr) Pattern() string {
-	hal.Logger.Debug("ikr: called Pattern()")
 	triggers:=[]string{
 		"best.*ev(er|ar)",
 		"so good",
@@ -33,12 +30,10 @@ func (h *ikr) Pattern() string {
 		"off the hook",
 	}
 	pat := "(?i)"+strings.Join(triggers,"|")
-	hal.Logger.Debug("ikr: pattern: %s", pat)
 	return pat
 }
 
 func (h *ikr) Run(res *hal.Response) error {
-	hal.Logger.Debug("ikr: called Run()")
 	replies := []string{
 		"*I know right?!*",
 		"*OMG* couldn't agree more",
@@ -61,7 +56,7 @@ func (h *ikr) Run(res *hal.Response) error {
 		"it's like you *literally* just read my mind right now",
 	}
 	reply := replies[rand.Intn(len(replies)-1)]
-	hal.Logger.Debug("ikr: my reply is: %s", reply)
+	hal.Logger.Debug(" *** ikr:Sending response: %s", reply)
 	res.Send(reply)
 	return nil
 }
