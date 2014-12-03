@@ -30,7 +30,7 @@
 		},
 		{
 			"ImportPath": "github.com/djosephsen/hal",
-			"Rev": "203d56b66215a1e1822f7b78af7f46e15707740f"
+			"Rev": "c8a742c36e81950544bc0f5dffe1a12ae3ab0862"
 		},
 		{
 			"ImportPath": "github.com/thoj/go-ircevent",
