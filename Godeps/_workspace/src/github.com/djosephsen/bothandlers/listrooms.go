@@ -5,7 +5,7 @@ import (
 	"fmt"
 	)
 
-var Listroom = &hal.Handler{
+var Listrooms = &hal.Handler{
 	Method:  hal.RESPOND,
 	Pattern: `what room is this`,
 	Run: func(res *hal.Response) error {
