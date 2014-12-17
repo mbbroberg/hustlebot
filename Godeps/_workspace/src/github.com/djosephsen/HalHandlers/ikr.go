@@ -1,4 +1,4 @@
-package bothandlers
+package HalHandlers
 
 import (
 	"time"
@@ -15,7 +15,7 @@ func (h *ikr) Method() string {
 }
 
 func (h *ikr) Usage() string {
-	return `ikr - listens for enthusiasm; responds with validation`
+	return `*ikr* - listens for enthusiasm; responds automatically with validation`
 }
 
 func (h *ikr) Pattern() string {
@@ -25,7 +25,7 @@ func (h *ikr) Pattern() string {
 		"they have the best",
 		"awesome",
 		"I love",
-		"fantastic|wonderful|outstanding|magnificent|brilliant|genius|amazing",
+		"fantastic|wonderful|outstanding|magnificent|brilliant|genius|amazing|epic|nice!",
 		"ZOMG|OMG|OMFG",
 		"(so|pretty) great",
 		"off the hook",

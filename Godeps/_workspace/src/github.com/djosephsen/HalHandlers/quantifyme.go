@@ -1,19 +1,18 @@
-package bothandlers
+package HalHandlers
 
 import (
 	"fmt"
 	"github.com/djosephsen/hal"
 	"math/rand"
 	"time"
-	"strings"
 )
 
 var Quantifyme = &hal.Handler{
 	Method:  hal.RESPOND,
-	Pattern: `quantify \S+`,
+	Pattern: `quantify (\S+)`,
+	Usage: `*Quantifyme*: botname quantify <noun>: replies with a randomly generated quantification of funny but probably NSFW personal attributes like 'mads', 'fucks', horribleness and passive-aggresivity`,
 	Run: func(res *hal.Response) error {
-		matchwords:=strings.Split(res.Match[0],` `)
-		user:=matchwords[2]
+		user:=res.Match[1]
 		if user==`me`{ user=`you` }
 		now:=time.Now()
 		rand.Seed(int64(now.Unix()))
@@ -29,9 +28,9 @@ var Quantifyme = &hal.Handler{
 			}
 		case `mads`:
 			if user==`you`{
-				reply=fmt.Sprintf(`%s are %d.%04d %s`,user,rand.Intn(int(2)),rand.Intn(int(1000)),state)
+				reply=fmt.Sprintf(`%s are %d.%04d %s`,user,rand.Intn(int(4)),rand.Intn(int(1000)),state)
 			}else{
-				reply=fmt.Sprintf(`%s is %d.%04d %s`,user,rand.Intn(int(2)),rand.Intn(int(1000)),state)
+				reply=fmt.Sprintf(`%s is %d.%04d %s`,user,rand.Intn(int(4)),rand.Intn(int(1000)),state)
 			}
 		case `fucks`:
 			if user==`you`{

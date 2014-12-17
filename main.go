@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/djosephsen/hal"
 	_ "github.com/djosephsen/hal/adapter/slack"
-	"github.com/djosephsen/bothandlers"
+	"github.com/djosephsen/HalHandlers"
 	_ "github.com/djosephsen/hal/store/memory"
 	"os"
 )
@@ -16,10 +16,15 @@ func run() int {
 	}
 
 	robot.Handle(
-		bothandlers.Syn,
-		bothandlers.Tableflip,
-		bothandlers.IKR,
-		bothandlers.Listrooms,
+		HalHandlers.Syn,
+		HalHandlers.Tableflip,
+		HalHandlers.IKR,
+		HalHandlers.ListRooms,
+		HalHandlers.ManageChores,
+		HalHandlers.ListChores,
+		HalHandlers.LoveAndWar,
+		HalHandlers.Gifme,
+		HalHandlers.Help,
 	)
 
 	if err := robot.Run(); err != nil {
