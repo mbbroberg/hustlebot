@@ -26,7 +26,7 @@
 		},
 		{
 			"ImportPath": "github.com/djosephsen/HalHandlers",
-			"Rev": "193604f49d435578a75a986d0f3a7adb2355cdae"
+			"Rev": "d2cf8738afbd1dbc2edd48e3f36d653662ee5472"
 		},
 		{
 			"ImportPath": "github.com/djosephsen/hal",
